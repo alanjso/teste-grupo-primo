@@ -36,4 +36,8 @@ Descrição completa do teste:
 
 ##### Teste Automatizados
 
-> *Em desenvolvimento*
+ 1. Após inicializar pelo menos uma vez o projeto com o "npm run dev", encerre a instancia do projeto e siga para o próximo passo.
+ 2. Abra o terminal na raiz do projeto e execute o comando "npm test" para executar os testes da tabela verdade disponibilizadas no desafio.
+ 3. Os rultudados dos testes aparecerão no terminal.
+ 4. Se desejável, os logs de todas as operações de alteração estão sendo salvas na tabela "Logs".
+ 5. As contas criadas para os testes são automaticamente apagadas ao final da execução dos testes, mas os logs se mantem.
