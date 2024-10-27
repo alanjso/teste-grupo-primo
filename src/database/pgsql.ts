@@ -1,10 +1,9 @@
-import { error } from 'console';
 import { Sequelize } from 'sequelize';
 
 const db = process.env.DATABASE || 'grupo-primo';
 const dbUsername = process.env.DB_USERNAME || 'postgres';
 const dbPassword = process.env.DB_PASSWORD || '';
-const dbHost = process.env.DB_HOST || 'http://localhost:5432';
+const dbHost = process.env.DB_HOST || 'localhost';
 
 const sequelize = new Sequelize(db, dbUsername, dbPassword, {
     host: dbHost,

@@ -91,7 +91,6 @@ export default {
             await transaction.commit();
             return res.status(200).json({ msg: 'successo', acc: accNew });
         } catch (error) {
-            console.log(error);
             if (transaction) {
                 await transaction.rollback();
             }
