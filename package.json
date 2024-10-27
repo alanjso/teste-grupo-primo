@@ -1,0 +1,45 @@
+{
+  "name": "teste-grupo-primo",
+  "version": "1.0.0",
+  "description": "Sistema de Transações Bancárias com Concorrência de Saldo - Grupo Primo https://gist.github.com/gp-breno/71e3f5e0b85b97c79911037d8643e81e",
+  "main": "./src/index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon --watch src --exec ts-node ./src/index.ts",
+    "build": "tsc",
+    "start": "node ./dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alanjso/teste-grupo-primo.git"
+  },
+  "author": "Alan Oliveira",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alanjso/teste-grupo-primo/issues"
+  },
+  "homepage": "https://github.com/alanjso/teste-grupo-primo#readme",
+  "devDependencies": {
+    "@types/chai": "^5.0.0",
+    "@types/jest": "^29.5.14",
+    "@types/mocha": "^10.0.9",
+    "chai": "^5.1.2",
+    "jest": "^29.7.0",
+    "mocha": "^10.7.3",
+    "nodemon": "^3.1.7",
+    "ts-jest": "^29.2.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.3"
+  },
+  "dependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.7.9",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "pg": "^8.13.1",
+    "sequelize": "^6.37.5",
+    "sequelize-cli": "^6.6.2"
+  }
+}

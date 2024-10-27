@@ -1,0 +1,159 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "Grupo Primo",
+    "collectionId": "ac7e72e0-ab69-49c7-a691-0656ddd88290",
+    "dateExported": "2024-10-27T06:23:04.550Z",
+    "version": "1.2",
+    "folders": [
+        {
+            "_id": "fdbda18f-0089-43f2-8337-39d7f750e25e",
+            "name": "CRUD Account",
+            "containerId": "",
+            "created": "2024-10-27T06:12:01.451Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "188fadc8-7100-47fe-85db-93688ce96938",
+            "name": "Transactions",
+            "containerId": "",
+            "created": "2024-10-27T06:12:27.937Z",
+            "sortNum": 20000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "ad8f3c77-bfb8-4173-8f2b-ecd894638e7c",
+            "colId": "ac7e72e0-ab69-49c7-a691-0656ddd88290",
+            "containerId": "fdbda18f-0089-43f2-8337-39d7f750e25e",
+            "name": "List Account",
+            "url": "http://localhost:4001/v1/account",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2024-10-27T06:10:21.730Z",
+            "modified": "2024-10-27T06:10:21.730Z",
+            "headers": []
+        },
+        {
+            "_id": "a8630583-fb9b-43f0-8fed-36b40ca47232",
+            "colId": "ac7e72e0-ab69-49c7-a691-0656ddd88290",
+            "containerId": "188fadc8-7100-47fe-85db-93688ce96938",
+            "name": "Transaction: Deposito",
+            "url": "http://localhost:4001/v1/transaction/deposito",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-10-27T06:11:30.470Z",
+            "modified": "2024-10-27T06:11:30.470Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"accountId\": \"101\",\n  \"amount\": 750\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "ba68c784-1436-48cd-81ed-9b6618afc340",
+            "colId": "ac7e72e0-ab69-49c7-a691-0656ddd88290",
+            "containerId": "fdbda18f-0089-43f2-8337-39d7f750e25e",
+            "name": "Create Account",
+            "url": "http://localhost:4001/v1/account",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-10-27T06:10:36.381Z",
+            "modified": "2024-10-27T06:10:36.381Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"accountId\": \"102\",\n  \"balance\": 250\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "be182650-3b8d-406f-b7a2-4b4aa0eff23b",
+            "colId": "ac7e72e0-ab69-49c7-a691-0656ddd88290",
+            "containerId": "188fadc8-7100-47fe-85db-93688ce96938",
+            "name": "Transaction: Saque",
+            "url": "http://localhost:4001/v1/transaction/saque",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-10-27T06:11:35.942Z",
+            "modified": "2024-10-27T06:11:35.942Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"accountId\": \"101\",\n  \"amount\": 750\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "5d552845-e599-4cec-8ea0-3fcc6d4e493f",
+            "colId": "ac7e72e0-ab69-49c7-a691-0656ddd88290",
+            "containerId": "fdbda18f-0089-43f2-8337-39d7f750e25e",
+            "name": "Edit Account By Id",
+            "url": "http://localhost:4001/v1/account/5",
+            "method": "PUT",
+            "sortNum": 30000,
+            "created": "2024-10-27T06:10:54.429Z",
+            "modified": "2024-10-27T06:10:54.429Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"balance\": 250,\n  \"status\": \"ativa\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "cbf97f80-0038-4f88-bbf0-00935ff3e9f1",
+            "colId": "ac7e72e0-ab69-49c7-a691-0656ddd88290",
+            "containerId": "188fadc8-7100-47fe-85db-93688ce96938",
+            "name": "Transaction: Transferencia",
+            "url": "http://localhost:4001/v1/transaction/transferencia",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2024-10-27T06:11:40.862Z",
+            "modified": "2024-10-27T06:11:40.862Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"amount\": 200,\n  \"fromAccountId\": \"102\",\n  \"toAccountId\": \"101\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "3db14e20-0ed8-4206-a92a-1b6aa0125092",
+            "colId": "ac7e72e0-ab69-49c7-a691-0656ddd88290",
+            "containerId": "fdbda18f-0089-43f2-8337-39d7f750e25e",
+            "name": "Account By Id",
+            "url": "http://localhost:4001/v1/account/3",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2024-10-27T06:11:03.654Z",
+            "modified": "2024-10-27T06:11:03.654Z",
+            "headers": []
+        },
+        {
+            "_id": "ddd1c265-1463-4a3e-83b3-43241a723fc2",
+            "colId": "ac7e72e0-ab69-49c7-a691-0656ddd88290",
+            "containerId": "fdbda18f-0089-43f2-8337-39d7f750e25e",
+            "name": "Account By AccountId",
+            "url": "http://localhost:4001/v1/account/accountId/101",
+            "method": "GET",
+            "sortNum": 50000,
+            "created": "2024-10-27T06:11:12.486Z",
+            "modified": "2024-10-27T06:11:12.486Z",
+            "headers": []
+        },
+        {
+            "_id": "57d221aa-4ffd-4943-9814-0d7fc65841d9",
+            "colId": "ac7e72e0-ab69-49c7-a691-0656ddd88290",
+            "containerId": "fdbda18f-0089-43f2-8337-39d7f750e25e",
+            "name": "Delete Account By Id",
+            "url": "http://localhost:4001/v1/account/5",
+            "method": "DELETE",
+            "sortNum": 60000,
+            "created": "2024-10-27T06:11:21.509Z",
+            "modified": "2024-10-27T06:11:21.509Z",
+            "headers": []
+        }
+    ],
+    "ref": "jIvhwdXyIDqqLK4xQCpdqOounDrS1U75o5YECoAxccpP4YsAeV8EOy53SoHWqo9bLFwlmZAvFqaoPTKmdRQoew"
+}
